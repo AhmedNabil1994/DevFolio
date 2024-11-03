@@ -3,17 +3,2169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>z-index</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="description" content="DevFolio Bootstrap Portfolio Template" />
+    <title>DevFolio Bootstrap Portfolio Template - Index</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.webp"
+      type="image/x-icon"
+    />
+    <link rel="preload" href="./images/hero-bg.webp" as="image" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
-  <body>
-    <div class="parent-one">
-      <div class="child-one"></div>
-      <div class="child-two"></div>
-    </div>
-    <div class="parent-two">
-      <div class="child-one"></div>
-      <div class="child-two"></div>
-    </div>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- start nav -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid container-lg">
+        <a class="navbar-brand logo" href="index.html">DevFolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa-solid fa-bars"></span>
+          <span class="bi bi-x close"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+            <li class="nav-item link">
+              <a class="nav-link" href="#home">home</a>
+            </li>
+            <li class="nav-item link">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item link">
+              <a class="nav-link" href="#services">services </a>
+            </li>
+            <li class="nav-item link">
+              <a class="nav-link" href="#portfolio">work</a>
+            </li>
+            <li class="nav-item link">
+              <a class="nav-link" href="#blog">blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                Drop down
+                <i
+                  class="bi bi-chevron-right d-block d-lg-none dropdown-arrow"
+                ></i>
+              </a>
+              <ul class="dropdown-menu appear main">
+                <li class="regular">
+                  <a href="#" class="dropdown-item">drop down 1</a>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item" href="#">
+                    deep drop down
+                    <i
+                      class="fa-solid fa-chevron-right ps-3 dropdown-arrow"
+                    ></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-submenu" id="submenu">
+                    <li>
+                      <a href="#" class="dropdown-item">deep drop down 1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">deep drop down 2</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">deep drop down 3</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">deep drop down 4</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">deep drop down 5</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="regular">
+                  <a href="#" class="dropdown-item">drop down 2</a>
+                </li>
+                <li class="regular">
+                  <a href="#" class="dropdown-item">drop down 3</a>
+                </li>
+                <li class="regular">
+                  <a href="#" class="dropdown-item">drop down 4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item link">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+    <!-- --------------------- -->
+    <!-- start header -->
+    <header
+      id="home"
+      class="position-relative d-flex justify-content-center align-items-center z-2"
+    >
+      <div class="position-absolute text">
+        <h1 class="mb-3">I am Morgan Freeman</h1>
+        <p>
+          <span class="typing"></span>
+        </p>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- --------------------- -->
+    <main>
+      <!-- start about -->
+      <section id="about" class="bg-light mt-5">
+        <div class="container">
+          <div class="content p-2 p-sm-3 p-lg-5">
+            <div class="row">
+              <div class="col-md-6 left p-3">
+                <div>
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5 ps-4">
+                      <div>
+                        <picture>
+                          <img
+                            class="rounded-2 img-fluid"
+                            srcset="./images/testimonial-2.webp"
+                            alt="About Me Image"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <article class="info mt-3 mt-md-0 mt-lg-2">
+                        <h2 class="mb-3"><span>Name</span>: Morgan Freeman</h2>
+                        <h2 class="mb-3">
+                          <span>Profile</span>: full stack developer
+                        </h2>
+                        <h2 class="mb-3">
+                          <span>Email</span>: contact@example.com
+                        </h2>
+                        <h2 class="mb-3"><span>Phone</span>: (617) 557-0089</h2>
+                      </article>
+                    </div>
+                    <div class="col mt-3">
+                      <article class="skills">
+                        <h2>Skill</h2>
+                        <p>HTML 85%</p>
+                        <div
+                          class="progress mb-3"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                        <p>CSS3 75%</p>
+                        <div
+                          class="progress mb-3"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                        <p>PHP 50%</p>
+                        <div
+                          class="progress mb-3"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 50%"></div>
+                        </div>
+                        <p>JAVASCRIPT 90%</p>
+                        <div
+                          class="progress mb-3"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="100"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 right p-3">
+                <article class="">
+                  <h2 class="left-underline">About me</h2>
+                  <p class="lead mt-5">
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac
+                    lectus. Curabitur arcu erat, accumsan id imperdiet et,
+                    porttitor at sem. Praesent sapien massa, convallis a
+                    pellentesque nec, egestas non nisi. Nulla porttitor accumsan
+                    tincidunt.
+                  </p>
+                  <p class="lead">
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    Vivamus suscipit tortor eget felis porttitor volutpat.
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                    amet dui. porttitor at sem.
+                  </p>
+                  <p class="lead">
+                    Nulla porttitor accumsan tincidunt. Quisque velit nisi,
+                    pretium ut lacinia in, elementum id enim. Nulla porttitor
+                    accumsan tincidunt. Mauris blandit aliquet elit, eget
+                    tincidunt nibh pulvinar a.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end about -->
+      <!-- --------------------- -->
+      <!-- start services -->
+      <section id="services" class="bg-light py-5">
+        <header class="text-center">
+          <h2>Services</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="line m-auto"></div>
+        </header>
+        <div class="container mt-5">
+          <div class="row gy-5">
+            <div class="col-md-6 col-lg-4 box">
+              <article class="rounded-2 text-center p-4">
+                <div class="icon m-auto">
+                  <i class="bi bi-briefcase"></i>
+                </div>
+                <h3 class="text-uppercase mt-3">Web Design</h3>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  adipisci eaque autem fugiat! Quia, provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 box">
+              <article class="rounded-2 text-center p-4">
+                <div class="icon m-auto">
+                  <i class="bi bi-card-checklist"></i>
+                </div>
+                <h3 class="text-uppercase mt-3">Web Development</h3>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  adipisci eaque autem fugiat! Quia, provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 box">
+              <article class="rounded-2 text-center p-4">
+                <div class="icon m-auto">
+                  <i class="bi bi-bar-chart"></i>
+                </div>
+                <h3 class="text-uppercase mt-3">Photography</h3>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  adipisci eaque autem fugiat! Quia, provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 box">
+              <article class="rounded-2 text-center p-4">
+                <div class="icon m-auto">
+                  <i class="bi bi-binoculars"></i>
+                </div>
+                <h3 class="text-uppercase mt-3">Responsive Design</h3>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  adipisci eaque autem fugiat! Quia, provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 box">
+              <article class="rounded-2 text-center p-4">
+                <div class="icon m-auto">
+                  <i class="bi bi-brightness-high"></i>
+                </div>
+                <h3 class="text-uppercase mt-3">Graphic Design</h3>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  adipisci eaque autem fugiat! Quia, provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 box">
+              <article class="rounded-2 text-center p-4">
+                <div class="icon m-auto">
+                  <i class="bi bi-calendar4-week"></i>
+                </div>
+                <h3 class="text-uppercase mt-3">Marketing Services</h3>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  adipisci eaque autem fugiat! Quia, provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end services -->
+      <!-- --------------------- -->
+      <!-- start statistics -->
+      <section id="statistics" class="">
+        <div class="container position-relative">
+          <div class="row gy-5 gy-md-0">
+            <div class="col-sm-6 col-md-3">
+              <div class="text-center">
+                <div class="icon mb-1 mx-auto">
+                  <i class="bi bi-check"></i>
+                </div>
+                <p class="mb-0">450</p>
+                <h2 class="h6 fw-normal">WORKS COMPLETED</h2>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="text-center">
+                <div class="icon mb-1 mx-auto">
+                  <i class="bi bi-journal-richtext"></i>
+                </div>
+                <p class="mb-0">25</p>
+                <h2 class="h6 fw-normal">YEARS OF EXPERIENCE</h2>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="text-center">
+                <div class="icon mb-1 mx-auto">
+                  <i class="bi bi-people"></i>
+                </div>
+                <p class="mb-0">550</p>
+                <h2 class="h6 fw-normal">TOTAL CLIENTS</h2>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="text-center">
+                <div class="icon mb-1 mx-auto">
+                  <i class="bi bi-award"></i>
+                </div>
+                <p class="mb-0">48</p>
+                <h2 class="h6 fw-normal">AWARD WON</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end statistics -->
+      <!-- --------------------- -->
+      <!-- start portfolio -->
+      <section id="portfolio" class="bg-light py-5">
+        <header class="text-center mb-3">
+          <h2>Portfolio</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="line m-auto"></div>
+        </header>
+        <!-- navs and tabs container -->
+        <div class="container cards">
+          <ul
+            class="nav nav-pills mb-3 justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <!-- general tab -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-general-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-general"
+                type="button"
+                role="tab"
+                aria-controls="pills-general"
+                aria-selected="true"
+              >
+                GENERAL
+              </button>
+            </li>
+            <!-- app tab -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-app-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-app"
+                type="button"
+                role="tab"
+                aria-controls="pills-app"
+                aria-selected="true"
+              >
+                APP
+              </button>
+            </li>
+            <!-- product tab -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-product-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-product"
+                type="button"
+                role="tab"
+                aria-controls="pills-product"
+                aria-selected="true"
+              >
+                PRODUCT
+              </button>
+            </li>
+            <!-- branding tab -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-branding-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-branding"
+                type="button"
+                role="tab"
+                aria-controls="pills-branding"
+                aria-selected="true"
+              >
+                BRANDING
+              </button>
+            </li>
+            <!-- books tab -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-books-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-books"
+                type="button"
+                role="tab"
+                aria-controls="pills-books"
+                aria-selected="true"
+              >
+                BOOKS
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <!-- start general section -->
+            <section
+              class="tab-pane fade show active"
+              id="pills-general"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row gy-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-1.webp"
+                          alt="image one"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Lorem impsum dolor</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-custom-class="custom-tooltip"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                        >
+                          <i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-2.webp"
+                          alt="image two"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Loreda Cuno Nere</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-3.webp"
+                          alt="image three"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Mavrito Lana Dere</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-4.webp"
+                          alt="image four"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Bindo Laro Cado</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-5.webp"
+                          alt="image five"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Studio Lena Mado</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-6.webp"
+                          alt="image six"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Studio Big Bang</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <!-- end general section -->
+            <!-- --------------------- -->
+            <!-- start app section -->
+            <div
+              class="tab-pane fade show"
+              id="pills-app"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row gy-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-2"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-7.webp"
+                          alt="image seven"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Lorem impsum dolor</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-2"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-11.webp"
+                          alt="image eleven"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Loreda Cuno Nere</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-2"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-15.webp"
+                          alt="image fifteen"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Mavrito Lana Dere</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- end app section -->
+            <!-- --------------------- -->
+            <!-- start product section -->
+            <div
+              class="tab-pane fade show"
+              id="pills-product"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row gy-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-3"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-8.webp"
+                          alt="image eight"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Lorem impsum dolor</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-3"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-12.webp"
+                          alt="image twelve"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Loreda Cuno Nere</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-3"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-16.webp"
+                          alt="image sixteen"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Mavrito Lana Dere</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- end product section -->
+            <!-- --------------------- -->
+            <!-- start branding section -->
+            <div
+              class="tab-pane fade show"
+              id="pills-branding"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row gy-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-4"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-9.webp"
+                          alt="image nine"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Lorem impsum dolor</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-4"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-13.webp"
+                          alt="image thirteen"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Loreda Cuno Nere</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-4"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-17.webp"
+                          alt="image seventeen"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Mavrito Lana Dere</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- end branding section -->
+            <!-- --------------------- -->
+            <!-- start books section -->
+            <div
+              class="tab-pane fade show"
+              id="pills-books"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row gy-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-5"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-10.webp"
+                          alt="image ten"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Lorem impsum dolor</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-5"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-14.webp"
+                          alt="image fourteen"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Loreda Cuno Nere</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card">
+                    <div class="image">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal-5"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/work-18.webp"
+                          alt="image eighteen"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="card-body p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text">
+                        <p>Mavrito Lana Dere</p>
+                        <span>Web Design</span>
+                        <span>/ 18 Sep. 2018</span>
+                      </div>
+                      <div class="icon">
+                        <a
+                          target="_blank"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Go to Details Page"
+                          aria-label="Go to Details Page"
+                          data-bs-custom-class="custom-tooltip"
+                          href="https://routeegy.github.io/Devfolio/portfolio-details.html"
+                          ><i class="bi bi-plus-circle"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- end books section -->
+            <!-- --------------------- -->
+          </div>
+        </div>
+        <!-- navs and tabs sliders -->
+        <div>
+          <!-- slider-1-general-section -->
+          <div
+            class="modal fade slider"
+            id="portfolioModal"
+            tabindex="-1"
+            aria-labelledby="portfolioModalLabel"
+            aria-hidden="true"
+          >
+            <span
+              type="button"
+              class="bi bi-x close-icon"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></span>
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body p-0">
+                  <div id="portfolioCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-1.webp"
+                          class="img-fluid"
+                          alt="Image 1"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-2.webp"
+                          class="img-fluid"
+                          alt="Image 2"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-3.webp"
+                          class="img-fluid"
+                          alt="Image 3"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-4.webp"
+                          class="img-fluid"
+                          alt="Image 4"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-5.webp"
+                          class="img-fluid"
+                          alt="Image 5"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-6.webp"
+                          class="img-fluid"
+                          alt="Image 6"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#portfolioCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#portfolioCarousel"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slider-2-app-section -->
+          <div
+            class="modal fade slider type-2"
+            id="portfolioModal-2"
+            tabindex="-1"
+            aria-labelledby="portfolioModalLabel"
+            aria-hidden="true"
+          >
+            <span
+              type="button"
+              class="bi bi-x close-icon"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></span>
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body p-0">
+                  <div id="portfolioCarousel-2" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-7.webp"
+                          class="img-fluid"
+                          alt="Image 7"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-11.webp"
+                          class="img-fluid"
+                          alt="Image 11"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-15.webp"
+                          class="img-fluid"
+                          alt="Image 15"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#portfolioCarousel-2"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#portfolioCarousel-2"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slider-3-product-section -->
+          <div
+            class="modal fade slider type-2"
+            id="portfolioModal-3"
+            tabindex="-1"
+            aria-labelledby="portfolioModalLabel"
+            aria-hidden="true"
+          >
+            <span
+              type="button"
+              class="bi bi-x close-icon"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></span>
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body p-0">
+                  <div id="portfolioCarousel-3" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-8.webp"
+                          class="img-fluid"
+                          alt="Image 8"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-12.webp"
+                          class="img-fluid"
+                          alt="Image 12"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-16.webp"
+                          class="img-fluid"
+                          alt="Image 16"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#portfolioCarousel-3"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#portfolioCarousel-3"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slider-4-branding-section -->
+          <div
+            class="modal fade slider type-2"
+            id="portfolioModal-4"
+            tabindex="-1"
+            aria-labelledby="portfolioModalLabel"
+            aria-hidden="true"
+          >
+            <span
+              type="button"
+              class="bi bi-x close-icon"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></span>
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body p-0">
+                  <div id="portfolioCarousel-4" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-9.webp"
+                          class="img-fluid"
+                          alt="Image 9"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-13.webp"
+                          class="img-fluid"
+                          alt="Image 13"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-17.webp"
+                          class="img-fluid"
+                          alt="Image 17"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#portfolioCarousel-4"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#portfolioCarousel-4"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slider-5-books-section -->
+          <div
+            class="modal fade slider type-2"
+            id="portfolioModal-5"
+            tabindex="-1"
+            aria-labelledby="portfolioModalLabel"
+            aria-hidden="true"
+          >
+            <span
+              type="button"
+              class="bi bi-x close-icon"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></span>
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body p-0">
+                  <div id="portfolioCarousel-5" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-10.webp"
+                          class="img-fluid"
+                          alt="Image 10"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-14.webp"
+                          class="img-fluid"
+                          alt="Image 14"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/work-18.webp"
+                          class="img-fluid"
+                          alt="Image 18"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#portfolioCarousel-5"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#portfolioCarousel-5"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end portfolio -->
+      <!-- --------------------- -->
+      <!-- start faq -->
+      <section id="faq" class="bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <header>
+                <h2 class="me-2 me-lg-0">
+                  Frequently Asked <span>Questions</span>
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Duis aute irure dolor in reprehenderit
+                </p>
+              </header>
+            </div>
+            <div class="col-lg-8">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item mb-4">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      <span>1.</span>Non consectetur a erat nam at lectus urna
+                      duis?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis
+                        urna id volutpat lacus laoreet non curabitur gravida.
+                        Venenatis lectus magna fringilla urna porttitor rhoncus
+                        dolor purus non.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-4">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      <span>2.</span> Feugiat scelerisque varius morbi enim nunc
+                      faucibus a pellentesque?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Dolor sit amet consectetur adipiscing elit pellentesque
+                        habitant morbi. Id interdum velit laoreet id donec
+                        ultrices. Fringilla phasellus faucibus scelerisque
+                        eleifend donec pretium. Est pellentesque elit
+                        ullamcorper dignissim. Mauris ultrices eros in cursus
+                        turpis massa tincidunt dui.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-4">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      <span>3.</span> Dolor sit amet consectetur adipiscing elit
+                      pellentesque?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Eleifend mi in nulla posuere sollicitudin aliquam
+                        ultrices sagittis orci. Faucibus pulvinar elementum
+                        integer enim. Sem nulla pharetra diam sit amet nisl
+                        suscipit. Rutrum tellus pellentesque eu tincidunt.
+                        Lectus urna duis convallis convallis tellus. Urna
+                        molestie at elementum eu facilisis sed odio morbi quis
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-4">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour"
+                    >
+                      <span>4.</span> Ac odio tempor orci dapibus. Aliquam
+                      eleifend mi in nulla?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFour"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Molestie a iaculis at erat pellentesque adipiscing
+                        commodo. Dignissim suspendisse in est ante in. Nunc vel
+                        risus commodo viverra maecenas accumsan. Sit amet nisl
+                        suscipit adipiscing bibendum est. Purus gravida quis
+                        blandit turpis cursus in
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end faq -->
+      <!-- --------------------- -->
+      <!-- start carousel  -->
+      <section id="testimonial">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <article class="text-center">
+                      <img
+                        class="rounded-circle"
+                        src="./images/testimonial-2.webp"
+                        alt="image one"
+                        loading="lazy"
+                      />
+                      <div class="content">
+                        <h2 class="m-4">xavi alonso</h2>
+                        <p class="lead w-75 m-auto">
+                          Curabitur arcu erat, accumsan id imperdiet et,
+                          porttitor at sem. Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="carousel-item">
+                    <article class="text-center">
+                      <img
+                        class="rounded-circle object-fit-cover"
+                        src="./images/testimonial-4.webp"
+                        alt="image two"
+                        loading="lazy"
+                      />
+                      <div class="content">
+                        <h2 class="m-4">marta socrate</h2>
+                        <p class="lead w-75 m-auto">
+                          Curabitur arcu erat, accumsan id imperdiet et,
+                          porttitor at sem. Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end carousel  -->
+      <!-- --------------------- -->
+      <!-- start blog  -->
+      <section id="blog" class="pt-5 bg-light">
+        <header class="text-center mb-5">
+          <h2>Blog</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="line m-auto"></div>
+        </header>
+        <div class="container mb-5">
+          <div class="row gy-4 gy-lg-0">
+            <div class="col-md-6 col-lg-4">
+              <article class="card">
+                <div class="card-header">
+                  <a
+                    href="https://routeegy.github.io/Devfolio/blog-single.html"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/post-1.webp"
+                      loading="lazy"
+                      alt="image one"
+                      class="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <span class="badge text-bg-primary">Travel</span>
+                  <h3 class="pt-2 pt-md-1">
+                    <a
+                      href="https://routeegy.github.io/Devfolio/blog-single.html"
+                      target="_blank"
+                      >See more ideas about Travel</a
+                    >
+                  </h3>
+                  <p>
+                    Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                    dapibus. Praesent sapien massa, convallis a pellentesque
+                    nec, egestas non nisi
+                  </p>
+                </div>
+                <div
+                  class="p-2 card-footer d-flex justify-content-between align-items-center"
+                >
+                  <div class="info">
+                    <img
+                      src="./images/testimonial-2.webp"
+                      alt="image one"
+                      class="rounded-circle"
+                      loading="lazy"
+                    />
+                    <a href="#"> Morgan Freeman</a>
+                  </div>
+                  <div class="time">
+                    <i class="bi bi-clock"></i>
+                    <span> 10 min </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card">
+                <div class="card-header">
+                  <a
+                    href="https://routeegy.github.io/Devfolio/blog-single.html"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/post-2.webp"
+                      loading="lazy"
+                      alt="image two"
+                      class="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <span class="badge text-bg-primary">Web Design</span>
+                  <h3 class="pt-2 pt-md-1">
+                    <a
+                      href="https://routeegy.github.io/Devfolio/blog-single.html"
+                      target="_blank"
+                      >See more ideas about Travel</a
+                    >
+                  </h3>
+                  <p>
+                    Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                    dapibus. Praesent sapien massa, convallis a pellentesque
+                    nec, egestas non nisi
+                  </p>
+                </div>
+                <div
+                  class="p-2 card-footer d-flex justify-content-between align-items-center"
+                >
+                  <div class="info">
+                    <img
+                      src="./images/testimonial-2.webp"
+                      alt="image one"
+                      class="rounded-circle"
+                      loading="lazy"
+                    />
+                    <a href="#"> Morgan Freeman</a>
+                  </div>
+                  <div class="time">
+                    <i class="bi bi-clock"></i>
+                    <span> 10 min </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card">
+                <div class="card-header">
+                  <a
+                    href="https://routeegy.github.io/Devfolio/blog-single.html"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/post-3.webp"
+                      loading="lazy"
+                      alt="image three"
+                      class="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <span class="badge text-bg-primary">Web Design</span>
+                  <h3 class="pt-2 pt-md-1">
+                    <a
+                      href="https://routeegy.github.io/Devfolio/blog-single.html"
+                      target="_blank"
+                      >See more ideas about Travel</a
+                    >
+                  </h3>
+                  <p>
+                    Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                    dapibus. Praesent sapien massa, convallis a pellentesque
+                    nec, egestas non nisi
+                  </p>
+                </div>
+                <div
+                  class="p-2 card-footer d-flex justify-content-between align-items-center"
+                >
+                  <div class="info">
+                    <img
+                      src="./images/testimonial-2.webp"
+                      alt="image one"
+                      class="rounded-circle"
+                      loading="lazy"
+                    />
+                    <a href="#"> Morgan Freeman</a>
+                  </div>
+                  <div class="time">
+                    <i class="bi bi-clock"></i>
+                    <span> 10 min </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end blog  -->
+      <!-- --------------------- -->
+      <!-- start contact  -->
+      <section id="contact">
+        <div class="container">
+          <div class="content bg-light px-3 py-5 p-md-5">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left">
+                  <header>
+                    <h2 class="left-underline">Send Message Us</h2>
+                  </header>
+                  <form action="./index.html" method="get">
+                    <div class="row">
+                      <div class="col-md-12 mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Your Name"
+                          name="name"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 mb-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Your Email"
+                          name="email"
+                        />
+                      </div>
+                      <div class="col-12 mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Subject"
+                          name="subject"
+                        />
+                      </div>
+                      <div class="col-12 mb-3">
+                        <textarea
+                          class="form-control"
+                          rows="3"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                      <div class="col mb-3 text-center">
+                        <button
+                          class="btn btn-primary rounded-5 px-4 py-2"
+                          type="submit"
+                        >
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right">
+                  <header>
+                    <h2 class="left-underline">Get in Touch</h2>
+                  </header>
+                  <article>
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facilis dolorum dolorem soluta quidem expedita aperiam
+                      aliquid at. Totam magni ipsum suscipit amet? Autem nemo
+                      esse laboriosam ratione nobis mollitia inventore?
+                    </p>
+                    <div class="info">
+                      <div>
+                        <span
+                          ><i class="bi bi-geo-alt"></i> 329 WASHINGTON ST
+                          BOSTON, MA 02108
+                        </span>
+                      </div>
+                      <div>
+                        <span><i class="bi bi-phone"></i> (617) 557-0089 </span>
+                      </div>
+                      <div>
+                        <span
+                          ><i class="bi bi-geo-alt"></i> contact@example.com
+                        </span>
+                      </div>
+                    </div>
+                    <div class="icons d-flex mt-3">
+                      <div class="icon">
+                        <a href="#" aria-label="facebook link"
+                          ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                      </div>
+                      <div class="icon">
+                        <a href="#" aria-label="instagram link"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                      </div>
+                      <div class="icon">
+                        <a href="#" aria-label="twitter link"
+                          ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                      </div>
+                      <div class="icon">
+                        <a href="#" aria-label="linkedin link"
+                          ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end contact  -->
+      <!-- --------------------- -->
+      <!-- start scroll to top button -->
+      <section class="scroll-to-top position-relative z-1">
+        <a
+          href="#"
+          aria-label="scroll to top button"
+          class="btn position-fixed bottom-0 end-0 m-4 rounded-circle"
+        >
+          <i class="bi bi-arrow-up-short"></i>
+        </a>
+      </section>
+      <!-- end scroll to top button -->
+    </main>
+    <!-- start footer  -->
+    <footer class="text-center py-4">
+      <h2 class="h6 fw-normal">
+        © Copyright <span class="fw-bold">DevFolio</span>. All Rights Reserved
+      </h2>
+      <div class="icons d-flex mt-3 justify-content-center mb-3">
+        <div class="icon">
+          <a href="#" aria-label="facebook link" linkedin
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a href="#" aria-label="instagram link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a href="#" aria-label="twitter link"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a href="#" aria-label="linkedin link"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <p>
+        Designed by
+        <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+      </p>
+    </footer>
+    <!-- end footer  -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.min.js"></script>
   </body>
 </html>
