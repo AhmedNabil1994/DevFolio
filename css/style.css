@@ -217,15 +217,15 @@ nav {
 /* Header */
 header#home {
   height: 100vh;
-  position: relative;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
     url("../images/hero-bg.webp");
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+  background-position: center ;
   background-attachment: fixed;
   /* background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/hero-bg.webp") center / cover fixed; */
