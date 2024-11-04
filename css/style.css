@@ -776,16 +776,15 @@ footer {
     }
   }
 }
-@media screen and (min-width: 1024px) {
+
+/* xl and higher */
+@media screen and (min-width: 1200px) {
   header#home,
   section#statistics,
   section#testimonial,
   section#contact {
     background-attachment: fixed;
   }
-}
-/* xl and higher */
-@media screen and (min-width: 1200px) {
   /* slider */
   .slider {
     .modal-dialog {
