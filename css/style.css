@@ -775,6 +775,8 @@ footer {
       }
     }
   }
+}
+@media screen and (min-width: 1024px) {
   header#home,
   section#statistics,
   section#testimonial,
