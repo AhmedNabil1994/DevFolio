@@ -217,17 +217,8 @@ nav {
 /* Header */
 header#home {
   height: 100vh;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("../images/hero-bg.webp");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/hero-bg.webp") center / cover scroll; */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hero-bg.webp") center / cover scroll;
   div.text {
     color: white;
     font-weight: 600;
@@ -315,7 +306,7 @@ section#statistics {
   padding-block: 10rem;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/counters-bg.webp") center / cover fixed;
+    url("../images/counters-bg.webp") center / cover scroll;
   .container {
     .icon {
       width: 60px;
@@ -478,7 +469,7 @@ section#testimonial {
   padding-block: 8rem;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/overlay-bg.webp") center / cover fixed;
+    url("../images/overlay-bg.webp") center / cover scroll;
   .carousel-indicators {
     bottom: -70px;
     [data-bs-target] {
@@ -565,7 +556,7 @@ section#blog {
 section#contact {
   padding: 8rem 0 3rem;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/overlay-bg.webp") center / cover no-repeat fixed;
+    url("../images/overlay-bg.webp") center / cover no-repeat scroll;
   .content {
     header {
       h2 {
@@ -754,8 +745,8 @@ footer {
               box-shadow: rgba(127, 137, 161, 0.25) 0px 0px 30px;
               border-radius: 0px;
               border-color: white;
-              li{
-                padding-top: .5rem;
+              li {
+                padding-top: 0.5rem;
               }
             }
             &:hover ul.dropdown-submenu {
