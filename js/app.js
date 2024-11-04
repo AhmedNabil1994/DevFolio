@@ -4,7 +4,7 @@ const barsIcon = document.querySelector(".fa-bars");
 const closeIcon = document.querySelector(".bi-x");
 const navbar = document.getElementById("navbar");
 const mobileList = document.getElementById("navbarSupportedContent");
-const navLinks = document.querySelectorAll("li.link");
+const navLinks = document.querySelectorAll("li.nav-item");
 const openingMainDropdownMenuAnchor = document.querySelector(
   ".nav-item.dropdown a.dropdown-toggle "
 );
@@ -38,7 +38,7 @@ const booksTabImages = document.querySelectorAll("#pills-books img");
     backDelay: 2000,
     loop: true,
   };
-  let typing = new Typed(".typing", options);
+  new Typed(".typing", options);
 })();
 
 // ------------------------------------mobile nav effect----------------------------
@@ -67,15 +67,21 @@ function navLinkEffect(links) {
   links.forEach(callback);
   function callback(link) {
     link.addEventListener("click", () => {
-      closeIcon.classList.remove("appear");
-      closeIcon.classList.add("close");
-      barsIcon.classList.remove("close");
-      mobileList.classList.remove("show");
-      navbar.classList.remove("nav-bg");
-      // test
-      // openingMainDropdownMenuAnchor.classList.remove("active");
-      // openingMainDropdownMenuAnchor.classList.remove("show");
-      // dropdownArrows[0].classList.remove("change-arrow");
+      if (link.classList.contains("link") && window.innerWidth <= 991) {
+        console.log(link);
+        console.log(link.classList.contains("link"));
+        console.log(window.innerWidth <= 991);
+        closeIcon.classList.remove("appear");
+        closeIcon.classList.add("close");
+        barsIcon.classList.remove("close");
+        mobileList.classList.remove("show");
+        navbar.classList.remove("nav-bg");
+      } else {
+        console.log("large screen");
+        // link.querySelector(".dropdown-toggle").classList.remove("active");
+        // link.querySelector(".dropdown-toggle").classList.remove("show");
+        // dropdownArrows[0].classList.remove("change-arrow");
+      }
     });
   }
 }
@@ -84,6 +90,7 @@ function navLinkEffect(links) {
   navLinkEffect(navLinks);
   // test
   // navLinkEffect(mainDropdownMenuSections);
+  // navLinkEffect(openingMainDropdownMenuAnchor);
 })();
 
 // ------------------------------------portfolio sliders effect----------------------------
@@ -140,7 +147,7 @@ function toggleDropdowns(anchor, dropdown) {
   anchor.addEventListener("click", () => {
     dropdown.classList.toggle("appear");
     anchor.classList.toggle("show");
-    anchor.classList.contains("dropdown-toggle")
+    (anchor.classList.contains("dropdown-toggle"))
       ? dropdownArrows[0].classList.toggle("change-arrow")
       : dropdownArrows[1].classList.toggle("change-arrow");
   });
@@ -151,6 +158,7 @@ function toggleDropdowns(anchor, dropdown) {
   barsIcon.addEventListener("click", () => {
     mainDropdownMenu.classList.remove("appear");
   });
+  
   toggleDropdowns(openingMainDropdownMenuAnchor, mainDropdownMenu);
   toggleDropdowns(openingDropdownSubmenuAnchor, dropdownSubmenu);
 })();

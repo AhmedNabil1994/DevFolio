@@ -223,12 +223,11 @@ header#home {
       rgba(0, 0, 0, 0.5)
     ),
     url("../images/hero-bg.webp");
-  background-size: 100% 100%;
-  /* background-size: cover; */
-  background-position: center ;
-  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
   /* background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/hero-bg.webp") center / cover fixed; */
+    url("../images/hero-bg.webp") center / cover scroll; */
   div.text {
     color: white;
     font-weight: 600;
@@ -316,7 +315,7 @@ section#statistics {
   padding-block: 10rem;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/counters-bg.webp") center / cover no-repeat fixed;
+    url("../images/counters-bg.webp") center / cover fixed;
   .container {
     .icon {
       width: 60px;
@@ -479,7 +478,7 @@ section#testimonial {
   padding-block: 8rem;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/overlay-bg.webp") center / cover no-repeat fixed;
+    url("../images/overlay-bg.webp") center / cover fixed;
   .carousel-indicators {
     bottom: -70px;
     [data-bs-target] {
@@ -724,7 +723,7 @@ footer {
             a.dropdown-item {
               i {
                 position: absolute;
-                top: 1.5625rem;
+                top: 1.25rem;
                 right: 0.9375rem;
                 &:active {
                   color: 0.5em solid var(--main-color);
@@ -743,12 +742,21 @@ footer {
               }
             }
             ul.dropdown-submenu {
-              position: absolute;
+              /* position: absolute;
               top: 20%;
               left: 30%;
               box-shadow: rgba(127, 137, 161, 0.25) 0px 0px 30px;
               border-radius: 0px;
+              border-color: white; */
+              position: relative;
+              top: 0;
+              left: 0.625rem;
+              box-shadow: rgba(127, 137, 161, 0.25) 0px 0px 30px;
+              border-radius: 0px;
               border-color: white;
+              li{
+                padding-top: .5rem;
+              }
             }
             &:hover ul.dropdown-submenu {
               opacity: 0;
