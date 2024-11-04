@@ -735,10 +735,7 @@ footer {
             ul.dropdown-submenu {
               /* position: absolute;
               top: 20%;
-              left: 30%;
-              box-shadow: rgba(127, 137, 161, 0.25) 0px 0px 30px;
-              border-radius: 0px;
-              border-color: white; */
+              left: 30%; */
               position: relative;
               top: 0;
               left: 0.625rem;
@@ -772,11 +769,17 @@ footer {
     .modal-dialog {
       --bs-modal-width: 800px;
     }
-  }
-  .slider.type-2 {
-    .modal-dialog {
-      --bs-modal-width: 720px;
+    &.type-2 {
+      .modal-dialog {
+        --bs-modal-width: 720px;
+      }
     }
+  }
+  header#home,
+  section#statistics,
+  section#testimonial,
+  section#contact {
+    background-attachment: fixed;
   }
 }
 /* xl and higher */
