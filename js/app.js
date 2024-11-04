@@ -64,8 +64,8 @@ const booksTabImages = document.querySelectorAll("#pills-books img");
 
 // nav link logic
 function navLinkEffect(links) {
-  links.forEach(navLinkEffect);
-  function navLinkEffect(link) {
+  links.forEach(callback);
+  function callback(link) {
     link.addEventListener("click", () => {
       closeIcon.classList.remove("appear");
       closeIcon.classList.add("close");
@@ -73,27 +73,17 @@ function navLinkEffect(links) {
       mobileList.classList.remove("show");
       navbar.classList.remove("nav-bg");
       // test
-      openingMainDropdownMenuAnchor.classList.remove("active")
-      openingMainDropdownMenuAnchor.classList.remove("show")
-      dropdownArrows[0].classList.remove("change-arrow")
+      // openingMainDropdownMenuAnchor.classList.remove("active");
+      // openingMainDropdownMenuAnchor.classList.remove("show");
+      // dropdownArrows[0].classList.remove("change-arrow");
     });
   }
 }
 // clicking nav links effect
 (function navLinksEffect() {
-  // navLinks.forEach(navLinkEffect);
-  // function navLinkEffect(navLink) {
-  //   navLink.addEventListener("click", () => {
-  //     closeIcon.classList.remove("appear");
-  //     closeIcon.classList.add("close");
-  //     barsIcon.classList.remove("close");
-  //     mobileList.classList.remove("show");
-  //     navbar.classList.remove("nav-bg");
-  //   });
-  // }
   navLinkEffect(navLinks);
   // test
-  navLinkEffect(mainDropdownMenuSections);
+  // navLinkEffect(mainDropdownMenuSections);
 })();
 
 // ------------------------------------portfolio sliders effect----------------------------
