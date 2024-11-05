@@ -14,7 +14,6 @@ const openingDropdownSubmenuAnchor = document.querySelector(
 );
 const mainDropdownMenu = document.querySelector("ul.main");
 const dropdownSubmenu = document.querySelector("ul.dropdown-submenu");
-const mainDropdownMenuSections = document.querySelectorAll("li.other-sections");
 const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
 // sliders
 const allSliders = document.querySelectorAll(".slider");
