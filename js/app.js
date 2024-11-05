@@ -163,6 +163,21 @@ function toggleDropdowns(anchor, dropdown, idx) {
   }
 })();
 
+// remove changing main dropdown arrow when scroll to other sections
+(function removeChangingArrow() {
+  mainMenuOtherSections.forEach((link) => {
+    link.addEventListener("click", () => {
+      window.addEventListener("scroll", removeArrowClass);
+    });
+  });
+})();
+
+// removing the class logic
+function removeArrowClass() {
+  dropdownArrows[0].classList.remove("change-arrow");
+  window.removeEventListener("scroll", removeArrowClass);
+}
+
 // ------------------------------------tooltip initialize----------------------------
 const tooltipTriggerList = document.querySelectorAll(
   '[data-bs-toggle="tooltip"]'
