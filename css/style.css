@@ -202,9 +202,6 @@ nav {
               }
             }
           }
-          &.appear ~ a.dropdown-toggle {
-            color: red;
-          }
         }
         &:hover ul.dropdown-menu {
           opacity: 1;
@@ -714,7 +711,7 @@ footer {
             a.dropdown-item {
               i {
                 position: absolute;
-                top: 1.25rem;
+                top: 1.375rem;
                 right: 0.9375rem;
                 &:active {
                   color: 0.5em solid var(--main-color);
@@ -791,4 +788,5 @@ footer {
       --bs-modal-width: 880px;
     }
   }
+  
 }

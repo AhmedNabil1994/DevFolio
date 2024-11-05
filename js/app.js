@@ -4,7 +4,8 @@ const barsIcon = document.querySelector(".fa-bars");
 const closeIcon = document.querySelector(".bi-x");
 const navbar = document.getElementById("navbar");
 const mobileList = document.getElementById("navbarSupportedContent");
-const navLinks = document.querySelectorAll("li.nav-item");
+const navLinks = document.querySelectorAll("li.nav-item.link");
+const mainMenuOtherSections = document.querySelectorAll("li.other-sections");
 const openingMainDropdownMenuAnchor = document.querySelector(
   ".nav-item.dropdown a.dropdown-toggle "
 );
@@ -59,6 +60,11 @@ const booksTabImages = document.querySelectorAll("#pills-books img");
     closeIcon.classList.add("close");
     closeIcon.classList.remove("appear");
     navbar.classList.remove("nav-bg");
+    openingMainDropdownMenuAnchor.classList.remove("show");
+    dropdownArrows[0].classList.remove("change-arrow");
+    dropdownArrows[1].classList.remove("change-arrow");
+    openingDropdownSubmenuAnchor.classList.remove("show");
+    dropdownSubmenu.classList.remove("appear");
   });
 })();
 
@@ -67,30 +73,17 @@ function navLinkEffect(links) {
   links.forEach(callback);
   function callback(link) {
     link.addEventListener("click", () => {
-      if (link.classList.contains("link") && window.innerWidth <= 991) {
-        console.log(link);
-        console.log(link.classList.contains("link"));
-        console.log(window.innerWidth <= 991);
-        closeIcon.classList.remove("appear");
-        closeIcon.classList.add("close");
-        barsIcon.classList.remove("close");
-        mobileList.classList.remove("show");
-        navbar.classList.remove("nav-bg");
-      } else {
-        console.log("large screen");
-        // link.querySelector(".dropdown-toggle").classList.remove("active");
-        // link.querySelector(".dropdown-toggle").classList.remove("show");
-        // dropdownArrows[0].classList.remove("change-arrow");
-      }
+      closeIcon.classList.remove("appear");
+      closeIcon.classList.add("close");
+      barsIcon.classList.remove("close");
+      mobileList.classList.remove("show");
+      navbar.classList.remove("nav-bg");
     });
   }
 }
-// clicking nav links effect
 (function navLinksEffect() {
   navLinkEffect(navLinks);
-  // test
-  // navLinkEffect(mainDropdownMenuSections);
-  // navLinkEffect(openingMainDropdownMenuAnchor);
+  navLinkEffect(mainMenuOtherSections);
 })();
 
 // ------------------------------------portfolio sliders effect----------------------------
@@ -143,27 +136,35 @@ function removeActiveClass(sliderImages) {
 
 // ------------------------------------mobile dropdown effect----------------------------
 // toggling logic
-function toggleDropdowns(anchor, dropdown) {
-  anchor.addEventListener("click", () => {
-    dropdown.classList.toggle("appear");
-    anchor.classList.toggle("show");
-    (anchor.classList.contains("dropdown-toggle"))
-      ? dropdownArrows[0].classList.toggle("change-arrow")
-      : dropdownArrows[1].classList.toggle("change-arrow");
-  });
+function toggleDropdowns(anchor, dropdown, idx) {
+  if (window.innerWidth < 992) {
+    if (
+      openingMainDropdownMenuAnchor.classList.contains("show") &&
+      dropdownArrows[0].classList.contains("change-arrow")
+    ) {
+      openingMainDropdownMenuAnchor.classList.remove("show");
+      dropdownArrows[0].classList.remove("change-arrow");
+    }
+    anchor.addEventListener("click", () => {
+      dropdown.classList.toggle("appear");
+      anchor.classList.toggle("show");
+      dropdownArrows[idx].classList.toggle("change-arrow");
+    });
+  }
 }
 
-// toggling mobile dropdown
+// Toggling mobile dropdown
 (function mobileDropdownToggle() {
   barsIcon.addEventListener("click", () => {
     mainDropdownMenu.classList.remove("appear");
   });
-  
-  toggleDropdowns(openingMainDropdownMenuAnchor, mainDropdownMenu);
-  toggleDropdowns(openingDropdownSubmenuAnchor, dropdownSubmenu);
+  if (window.innerWidth < 992) {
+    toggleDropdowns(openingMainDropdownMenuAnchor, mainDropdownMenu, 0);
+    toggleDropdowns(openingDropdownSubmenuAnchor, dropdownSubmenu, 1);
+  }
 })();
 
-// tooltip initialize
+// ------------------------------------tooltip initialize----------------------------
 const tooltipTriggerList = document.querySelectorAll(
   '[data-bs-toggle="tooltip"]'
 );
