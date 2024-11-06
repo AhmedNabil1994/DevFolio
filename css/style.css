@@ -669,6 +669,9 @@ footer {
       }
       &.dropdown {
         a.dropdown-toggle {
+          &.nav-link:focus-visible{
+            box-shadow: none;
+          }
           i {
             position: absolute;
             top: 0.25rem;
@@ -704,6 +707,10 @@ footer {
               background-color: white;
             }
             a.dropdown-item {
+              &:focus-visible {
+                outline: none;
+                box-shadow: none;
+              }
               i {
                 position: absolute;
                 top: 1.375rem;
