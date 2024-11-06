@@ -205,7 +205,7 @@ nav {
 header#home {
   height: 100vh;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/webp_images/hero-bg.webp"),
+    url("../images/webp_images/hero-bg.webp") center / cover scroll,
     url("../images/jpg_images/hero-bg.jpg") center / cover scroll;
 }
 header#home .text {
@@ -294,7 +294,7 @@ section#statistics {
   padding-block: 10rem;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/webp_images/counters-bg.webp"),
+    url("../images/webp_images/counters-bg.webp") center / cover scroll,
     url("../images/jpg_images/counters-bg.jpg") center / cover scroll;
   .container {
     .icon {
@@ -458,7 +458,7 @@ section#testimonial {
   padding-block: 8rem;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/webp_images/overlay-bg.webp"),
+    url("../images/webp_images/overlay-bg.webp") center / cover scroll,
     url("../images/jpg_images/overlay-bg.jpg") center / cover scroll;
   .carousel-indicators {
     bottom: -70px;
@@ -546,8 +546,8 @@ section#blog {
 section#contact {
   padding: 8rem 0 3rem;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/webp_images/overlay-bg.webp"),
-    url("../images/jpg_images/overlay-bg.jpg") center / cover no-repeat scroll;
+    url("../images/webp_images/overlay-bg.webp") center / cover scroll,
+    url("../images/jpg_images/overlay-bg.jpg") center / cover scroll;
   .content {
     header {
       h2 {
