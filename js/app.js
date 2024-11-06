@@ -116,7 +116,7 @@ function tabsImagesEffect(tabTypeImages, sliderImages) {
 // remove active class when closing the slider
 function removeActiveClass(sliderImages) {
   sliderImages.forEach((sliderImage) => {
-    sliderImage.parentElement.classList.remove("active");
+    sliderImage.parentElement.parentElement.classList.remove("active");
   });
 }
 
