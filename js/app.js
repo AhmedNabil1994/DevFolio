@@ -28,6 +28,7 @@ const productTabImages = document.querySelectorAll("#pills-product img");
 const brandingTabImages = document.querySelectorAll("#pills-branding img");
 const booksTabImages = document.querySelectorAll("#pills-books img");
 
+
 // ------------------------------------home typing animation----------------------------
 (function typingAnimation() {
   let options = {
