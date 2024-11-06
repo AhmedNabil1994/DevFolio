@@ -202,7 +202,7 @@ nav {
   }
 }
 /* Header */
-header#home {
+/* header#home {
   height: 100vh;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/hero-bg.webp") center / cover scroll;
@@ -218,6 +218,23 @@ header#home {
   p {
     font-size: 2.5rem;
   }
+} */
+header#home {
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hero-bg.jpg") center / cover scroll;
+}
+header#home .text {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+header#home h1 {
+  font-weight: 600;
+  font-size: 4.5rem;
+}
+header#home p {
+  font-size: 2.5rem;
 }
 /* about */
 section#about {
@@ -669,7 +686,7 @@ footer {
       }
       &.dropdown {
         a.dropdown-toggle {
-          &.nav-link:focus-visible{
+          &.nav-link:focus-visible {
             box-shadow: none;
           }
           i {
