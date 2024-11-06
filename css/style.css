@@ -65,7 +65,6 @@ section > header .line {
 }
 .icons .icon {
   border-radius: 50%;
-  transition: inherit;
   box-shadow: 0 0 0 3px var(--main-color);
   width: 40px;
   height: 40px;
@@ -74,19 +73,20 @@ section > header .line {
   align-items: center;
   cursor: pointer;
   transition: all var(--main-transition-duration);
-  a {
-    color: var(--secondary-color);
-    i {
-      font-size: 1.25rem;
-    }
-  }
-  &:hover {
-    box-shadow: 0px 0px 0px 2px #cde1f8;
-    background-color: var(--main-color);
-    a {
-      color: white;
-    }
-  }
+  
+}
+.icons .icon:hover {
+  box-shadow: 0px 0px 0px 2px #cde1f8;
+  background-color: var(--main-color);
+}
+.icons .icon:hover a {
+  color: white;
+}
+.icons .icon a {
+  color: var(--secondary-color);
+}
+.icons .icon a i {
+  font-size: 1.25rem;
 }
 /* arrow of dropdown */
 .dropdown-arrow {
