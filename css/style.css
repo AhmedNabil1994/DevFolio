@@ -648,13 +648,20 @@ footer {
 /* lower md */
 @media screen and (max-width: 768px) {
   /* Header */
-  header#home {
+  /* header#home {
     h1 {
       font-size: 3rem;
     }
     p {
       font-size: 1.5rem;
     }
+  } */
+  
+  header#home h1 {
+    font-size: 3rem;
+  }
+  header#home p {
+    font-size: 1.5rem;
   }
 }
 /* md */
