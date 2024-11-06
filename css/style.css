@@ -614,21 +614,19 @@ section#contact {
 footer {
   background-color: #0062d3;
   color: white;
-  .icons {
-    .icon {
-      box-shadow: 0 0 0 1px #d4cacabd;
-      a {
-        color: #d4cacabd;
-      }
-      &:hover {
-        box-shadow: 0px 0px 0px 2px #cde1f8;
-      }
-    }
-  }
-  a {
-    color: white;
-    transition: all var(--secondary-transition-duration);
-  }
+}
+footer .icons .icon {
+  box-shadow: 0 0 0 1px #d4cacabd;
+}
+footer .icons .icon a {
+  color: #d4cacabd;
+}
+footer .icons .icon:hover {
+  box-shadow: 0px 0px 0px 2px #cde1f8;
+}
+footer a {
+  color: white;
+  transition: all var(--secondary-transition-duration);
 }
 
 /* ------------------------------------Media---------------------------- */
