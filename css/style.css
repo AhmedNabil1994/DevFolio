@@ -656,6 +656,7 @@ footer {
     background-color: white;
     padding-top: 10px;
     height: 100vh;
+    overflow-y: auto;
     li.nav-item {
       a.nav-link {
         color: var(--p-a-color);
