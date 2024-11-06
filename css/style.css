@@ -202,27 +202,11 @@ nav {
   }
 }
 /* Header */
-/* header#home {
-  height: 100vh;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/webp_images/hero-bg.webp") center / cover scroll;
-  div.text {
-    color: white;
-    font-weight: 600;
-    text-align: center;
-  }
-  h1 {
-    font-weight: 600;
-    font-size: 4.5rem;
-  }
-  p {
-    font-size: 2.5rem;
-  }
-} */
 header#home {
   height: 100vh;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/webp_images/hero-bg.webp") center / cover scroll;
+    url("../images/webp_images/hero-bg.webp"),
+    url("../images/jpg_images/hero-bg.jpg") center / cover scroll;
 }
 header#home .text {
   color: white;
@@ -310,7 +294,8 @@ section#statistics {
   padding-block: 10rem;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/webp_images/counters-bg.webp") center / cover scroll;
+    url("../images/webp_images/counters-bg.webp"),
+    url("../images/jpg_images/counters-bg.jpg") center / cover scroll;
   .container {
     .icon {
       width: 60px;
@@ -473,7 +458,8 @@ section#testimonial {
   padding-block: 8rem;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/webp_images/overlay-bg.webp") center / cover scroll;
+    url("../images/webp_images/overlay-bg.webp"),
+    url("../images/jpg_images/overlay-bg.jpg") center / cover scroll;
   .carousel-indicators {
     bottom: -70px;
     [data-bs-target] {
@@ -560,7 +546,8 @@ section#blog {
 section#contact {
   padding: 8rem 0 3rem;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/webp_images/overlay-bg.webp") center / cover no-repeat scroll;
+    url("../images/webp_images/overlay-bg.webp"),
+    url("../images/jpg_images/overlay-bg.jpg") center / cover no-repeat scroll;
   .content {
     header {
       h2 {
@@ -656,7 +643,7 @@ footer {
       font-size: 1.5rem;
     }
   } */
-  
+
   header#home h1 {
     font-size: 3rem;
   }
