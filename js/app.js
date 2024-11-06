@@ -97,7 +97,7 @@ function tabsImagesEffect(tabTypeImages, sliderImages) {
     function sliderCallback(sliderImage) {
       tabTypeImage.addEventListener("click", () => {
         if (tabTypeImage.src === sliderImage.src) {
-          sliderImage.parentElement.classList.add("active");
+          sliderImage.parentElement.parentElement.classList.add("active");
         }
       });
     }
