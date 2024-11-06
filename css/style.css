@@ -62,6 +62,7 @@ section > header .line {
 /* icons class */
 .icons {
   column-gap: 1.25rem;
+  display: flex;
 }
 .icons .icon {
   border-radius: 50%;
