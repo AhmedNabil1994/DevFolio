@@ -1,12 +1,5 @@
 /* ----------------------Stylig with CSS Nesting ---------------------- */
 /* js classes */
-/* test */
-
-#submenu.appear {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
 .appear {
   display: block;
   opacity: 1;
@@ -17,9 +10,6 @@
 }
 .nav-bg {
   background-color: var(--p-span-color-rgba);
-}
-.change-arrow {
-  transform: rotate(90deg);
 }
 /* comman styles */
 :root {
@@ -689,6 +679,7 @@ footer {
             color: var(--main-color);
             i {
               color: var(--main-color);
+              transform: rotate(90deg);
             }
           }
           &::after {
@@ -704,6 +695,9 @@ footer {
           box-shadow: rgba(127, 137, 161, 0.25) 0px 0px 30px;
           opacity: 1;
           visibility: visible;
+          li:first-child a {
+            background-color: white;
+          }
           li.dropdown-submenu {
             & > a.dropdown-item {
               background-color: white;
@@ -726,13 +720,11 @@ footer {
                 color: var(--main-color);
                 i {
                   color: var(--main-color);
+                  transform: rotate(90deg);
                 }
               }
             }
             ul.dropdown-submenu {
-              /* position: absolute;
-              top: 20%;
-              left: 30%; */
               position: relative;
               top: 0;
               left: 0.625rem;
@@ -743,10 +735,15 @@ footer {
                 padding-top: 0.5rem;
               }
             }
-            &:hover ul.dropdown-submenu {
+            &:hover .dropdown-submenu {
               opacity: 0;
               visibility: hidden;
               display: none;
+            }
+            .dropdown-menu.show {
+              display: block;
+              visibility: visible;
+              opacity: 1;
             }
           }
         }
@@ -788,5 +785,4 @@ footer {
       --bs-modal-width: 880px;
     }
   }
-  
 }

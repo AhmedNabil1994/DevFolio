@@ -14,7 +14,6 @@ const openingDropdownSubmenuAnchor = document.querySelector(
 );
 const mainDropdownMenu = document.querySelector("ul.main");
 const dropdownSubmenu = document.querySelector("ul.dropdown-submenu");
-const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
 // sliders
 const allSliders = document.querySelectorAll(".slider");
 const sliderOneImages = document.querySelectorAll("#portfolioModal img");
@@ -59,15 +58,19 @@ const booksTabImages = document.querySelectorAll("#pills-books img");
     closeIcon.classList.add("close");
     closeIcon.classList.remove("appear");
     navbar.classList.remove("nav-bg");
-    openingMainDropdownMenuAnchor.classList.remove("show");
-    dropdownArrows[0].classList.remove("change-arrow");
-    dropdownArrows[1].classList.remove("change-arrow");
-    openingDropdownSubmenuAnchor.classList.remove("show");
-    dropdownSubmenu.classList.remove("appear");
+    if (
+      openingMainDropdownMenuAnchor.classList.contains("show") &&
+      openingDropdownSubmenuAnchor.classList.contains("show")
+    ) {
+      openingMainDropdownMenuAnchor.classList.remove("show");
+      openingDropdownSubmenuAnchor.classList.remove("show");
+      mainDropdownMenu.classList.remove("show");
+      dropdownSubmenu.classList.remove("show");
+    }
   });
 })();
 
-// nav link logic
+// nav link logic (clicking the link closes the menu and scroll)
 function navLinkEffect(links) {
   links.forEach(callback);
   function callback(link) {
@@ -132,51 +135,6 @@ function removeActiveClass(sliderImages) {
     });
   }
 })();
-
-// ------------------------------------mobile dropdown effect----------------------------
-// toggling logic
-function toggleDropdowns(anchor, dropdown, idx) {
-  if (window.innerWidth < 992) {
-    if (
-      openingMainDropdownMenuAnchor.classList.contains("show") &&
-      dropdownArrows[0].classList.contains("change-arrow")
-    ) {
-      openingMainDropdownMenuAnchor.classList.remove("show");
-      dropdownArrows[0].classList.remove("change-arrow");
-    }
-    anchor.addEventListener("click", () => {
-      dropdown.classList.toggle("appear");
-      anchor.classList.toggle("show");
-      dropdownArrows[idx].classList.toggle("change-arrow");
-    });
-  }
-}
-
-// Toggling mobile dropdown
-(function mobileDropdownToggle() {
-  barsIcon.addEventListener("click", () => {
-    mainDropdownMenu.classList.remove("appear");
-  });
-  if (window.innerWidth < 992) {
-    toggleDropdowns(openingMainDropdownMenuAnchor, mainDropdownMenu, 0);
-    toggleDropdowns(openingDropdownSubmenuAnchor, dropdownSubmenu, 1);
-  }
-})();
-
-// remove changing main dropdown arrow when scroll to other sections
-(function removeChangingArrow() {
-  mainMenuOtherSections.forEach((link) => {
-    link.addEventListener("click", () => {
-      window.addEventListener("scroll", removeArrowClass);
-    });
-  });
-})();
-
-// removing the class logic
-function removeArrowClass() {
-  dropdownArrows[0].classList.remove("change-arrow");
-  window.removeEventListener("scroll", removeArrowClass);
-}
 
 // ------------------------------------tooltip initialize----------------------------
 const tooltipTriggerList = document.querySelectorAll(
