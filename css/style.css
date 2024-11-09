@@ -458,12 +458,13 @@ section#testimonial .carousel-indicators [data-bs-target] {
   margin-inline: 0.3125rem;
   border-radius: 50%;
 }
-section#testimonial .carousel-inner .carousel-item:nth-of-type(2) article img{
+section#testimonial .carousel-inner .carousel-item:nth-of-type(2) article img {
   width: 150px;
+  height: 150px;
   aspect-ratio: 1;
   object-position: 50% 0%;
 }
-section#testimonial .carousel-inner article .content h2{
+section#testimonial .carousel-inner article .content h2 {
   font-size: 1.375rem;
   font-weight: 600;
   text-transform: uppercase;
