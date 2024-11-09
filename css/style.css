@@ -443,7 +443,7 @@ section#faq .accordion .accordion-item .accordion-body p {
 }
 /* testimonial */
 section#testimonial {
-  padding-block: 8rem;
+  padding: 8rem 0;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
     url("../images/webp_images/overlay-bg.webp") center / cover scroll,
