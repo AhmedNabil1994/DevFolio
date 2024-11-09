@@ -295,23 +295,23 @@ section#services article:hover .icon i {
 }
 /* statistics */
 section#statistics {
-  padding-block: 10rem;
+  padding: 10rem 0;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
     url("../images/webp_images/counters-bg.webp") center / cover scroll,
     url("../images/jpg_images/counters-bg.jpg") center / cover scroll;
-  }
-  section#statistics .container .icon {
-    width: 60px;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: 0 0 0 12px #cde1f8;
-    font-size: 2rem;
-    padding: 5px;
-  }
-  section#statistics .container p:first-of-type {
-    font-size: 2rem;
-  }
+}
+section#statistics .container .icon {
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 0 12px #cde1f8;
+  font-size: 2rem;
+  padding: 5px;
+}
+section#statistics .container p:first-of-type {
+  font-size: 2rem;
+}
 /*portfolio*/
 section#portfolio {
   scroll-margin-top: 3.25rem;
