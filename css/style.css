@@ -229,32 +229,26 @@ header#home p {
   font-size: 2.5rem;
 }
 /* about */
-section#about {
-  .content {
-    background-color: white;
-    box-shadow: 1px 0px 2px 2px #80808033;
-    .left {
-      .info h2 {
-        font-size: 1rem;
-        font-weight: 400;
-        color: var(--p-span-color);
-      }
-      h2 span,
-      h2 {
-        font-weight: 600;
-        font-size: 1.125rem;
-      }
-      article.skills {
-        p {
-          color: var(--p-a-color);
-        }
-        .progress {
-          border-radius: 0;
-          background-color: #cde1f8;
-        }
-      }
-    }
-  }
+section#about .content {
+  background-color: white;
+  box-shadow: 1px 0px 2px 2px #80808033;
+}
+section#about .content .left .info h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--p-span-color);
+}
+section#about .content .left h2 span,
+section#about .content .left h2 {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+section#about .content .left article.skills p {
+  color: var(--p-a-color);
+}
+section#about .content .left article.skills .progress {
+  border-radius: 0;
+  background-color: #cde1f8;
 }
 /* services */
 section#services {
