@@ -403,49 +403,43 @@ section#portfolio .slider .carousel button span {
 /* faq */
 section#faq {
   padding-block: 3.75rem;
-  header {
-    h2 {
-      font-weight: 400;
-      font-size: 2.125rem;
-      span {
-        font-weight: 700;
-        color: var(--secondary-color);
-      }
-    }
-    p {
-      color: var(--p-a-color);
-    }
-  }
-  .accordion {
-    .accordion-item {
-      .accordion-header {
-        button {
-          font-size: 1.125rem;
-          font-weight: 600;
-          box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
-          padding: 1.25rem;
-          color: var(--secondary-color);
-          transition: all var(--main-transition-duration);
-          span {
-            color: var(--main-color);
-            margin-right: 0.625rem;
-          }
-          &:hover {
-            color: var(--main-color);
-          }
-          &[aria-expanded="true"] {
-            background-color: transparent;
-            color: var(--main-color);
-          }
-        }
-      }
-      .accordion-body {
-        p {
-          color: var(--p-a-color);
-        }
-      }
-    }
-  }
+}
+section#faq header h2 {
+  font-weight: 400;
+  font-size: 2.125rem;
+}
+section#faq header h2 span {
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+section#faq header p {
+  color: var(--p-a-color);
+}
+section#faq .accordion .accordion-item .accordion-header button {
+  font-size: 1.125rem;
+  font-weight: 600;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  color: var(--secondary-color);
+  transition: all var(--main-transition-duration);
+}
+section#faq .accordion .accordion-item .accordion-header button span {
+  color: var(--main-color);
+  margin-right: 0.625rem;
+}
+section#faq .accordion .accordion-item .accordion-header button:hover {
+  color: var(--main-color);
+}
+section#faq
+  .accordion
+  .accordion-item
+  .accordion-header
+  button[aria-expanded="true"] {
+  background-color: transparent;
+  color: var(--main-color);
+}
+section#faq .accordion .accordion-item .accordion-body p {
+  color: var(--p-a-color);
 }
 /* testimonial */
 section#testimonial {
