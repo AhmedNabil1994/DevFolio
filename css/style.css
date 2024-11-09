@@ -445,9 +445,14 @@ section#faq .accordion .accordion-item .accordion-body p {
 section#testimonial {
   padding: 8rem 0;
   color: white;
-  background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/webp_images/overlay-bg.webp") center / cover scroll,
-    url("../images/jpg_images/overlay-bg.jpg") center / cover scroll;
+  background-image: linear-gradient(
+      var(--main-color-rgba),
+      var(--main-color-rgba)
+    ),
+    url("../images/webp_images/overlay-bg.webp"),
+    url("../images/jpg_images/overlay-bg.jpg");
+  background-size: cover;
+  background-attachment: scroll;
 }
 section#testimonial .carousel-indicators {
   bottom: -70px;
