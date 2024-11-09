@@ -257,43 +257,41 @@ section#about .content .left article.skills .progress {
 /* services */
 section#services {
   scroll-margin-top: 3.25rem;
-  article {
-    background-color: white;
-    box-shadow: 1px 0px 2px 2px #80808012;
-    transition: all var(--secondary-transition-duration);
-    .icon {
-      background-color: var(--main-color);
-      width: 120px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      transition: inherit;
-      i {
-        background-color: white;
-        font-size: 2.5rem;
-        padding: 1.25rem 1.875rem;
-        border-radius: 50%;
-        transition: inherit;
-      }
-    }
-    h3 {
-      color: var(--secondary-color);
-      font-size: 1.375rem;
-    }
-    p {
-      color: var(--p-span-color);
-    }
-    &:hover {
-      .icon {
-        background-color: #cde1f8;
-        i {
-          background-color: var(--main-color);
-          color: white;
-        }
-      }
-    }
-  }
+}
+section#services article {
+  background-color: white;
+  box-shadow: 1px 0px 2px 2px #80808012;
+  transition: all var(--secondary-transition-duration);
+}
+section#services article .icon {
+  background-color: var(--main-color);
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: inherit;
+}
+section#services article .icon i {
+  background-color: white;
+  font-size: 2.5rem;
+  padding: 1.25rem 1.875rem;
+  border-radius: 50%;
+  transition: inherit;
+}
+section#services article h3 {
+  color: var(--secondary-color);
+  font-size: 1.375rem;
+}
+section#services article p {
+  color: var(--p-span-color);
+}
+section#services article:hover .icon {
+  background-color: #cde1f8;
+}
+section#services article:hover .icon i {
+  background-color: var(--main-color);
+  color: white;
 }
 /* statistics */
 section#statistics {
