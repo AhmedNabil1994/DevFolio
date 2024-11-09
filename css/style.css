@@ -24,6 +24,10 @@
   --secondary-transition-duration: 0.7s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -771,7 +775,8 @@ footer a {
     li.nav-item.dropdown
     ul.dropdown-menu
     li.dropdown-submenu
-    ul.dropdown-submenu li {
+    ul.dropdown-submenu
+    li {
     padding-top: 0.5rem;
   }
   ul.navbar-nav
