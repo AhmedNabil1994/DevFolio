@@ -519,48 +519,43 @@ section#blog .card .card-footer img a:hover {
 /* contact */
 section#contact {
   padding: 8rem 0 3rem;
-  background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/webp_images/overlay-bg.webp") center / cover scroll,
-    url("../images/jpg_images/overlay-bg.jpg") center / cover scroll;
-  .content {
-    header {
-      h2 {
-        margin-bottom: 3rem;
-      }
-    }
-    .left {
-      form {
-        input {
-          border-radius: 0;
-          font-size: 0.875rem;
-          padding: 0.625rem 0.9375rem;
-        }
-        textarea {
-          margin-bottom: 1rem;
-        }
-        button {
-          font-size: 1.1875rem;
-          border: 0;
-          transition: all var(--secondary-transition-duration);
-          &:hover {
-            background-color: #3393ff;
-            box-shadow: 0px 0px 0px 4px #cde1f8;
-          }
-        }
-      }
-    }
-    .right {
-      .info {
-        span {
-          color: var(--p-span-color);
-          i {
-            margin-right: 0.625rem;
-            color: var(--main-color);
-          }
-        }
-      }
-    }
-  }
+  background-image: linear-gradient(
+      var(--main-color-rgba),
+      var(--main-color-rgba)
+    ),
+    url("../images/webp_images/overlay-bg.webp"),
+    url("../images/jpg_images/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+section#contact .content header h2{
+  margin-bottom: 3rem;
+}
+section#contact .content .left form input {
+  border-radius: 0;
+  font-size: 0.875rem;
+  padding: 0.625rem 0.9375rem;
+}
+section#contact .content .left form textarea {
+  margin-bottom: 1rem;
+}
+section#contact .content .left form button {
+  font-size: 1.1875rem;
+  border: 0;
+  transition: all var(--secondary-transition-duration);
+}
+section#contact .content .left form button:hover {
+  background-color: #3393ff;
+  box-shadow: 0px 0px 0px 4px #cde1f8;
+}
+section#contact .content .right .info span {
+  color: var(--p-span-color);
+}
+section#contact .content .right .info span i {
+  margin-right: 0.625rem;
+  color: var(--main-color);
 }
 /* scroll to top */
 .scroll-to-top {
