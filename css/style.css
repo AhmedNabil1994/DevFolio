@@ -530,7 +530,7 @@ section#contact {
   background-attachment: scroll;
 }
 
-section#contact .content header h2{
+section#contact .content header h2 {
   margin-bottom: 3rem;
 }
 section#contact .content .left form input {
@@ -558,26 +558,24 @@ section#contact .content .right .info span i {
   color: var(--main-color);
 }
 /* scroll to top */
-.scroll-to-top {
-  a {
-    background-color: var(--main-color);
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    i {
-      font-size: 1.75rem;
-      color: white;
-    }
-    &:hover {
-      background-color: #298eff;
-    }
-  }
-  :target#home ~ & a {
-    visibility: hidden;
-    display: none;
-  }
+.scroll-to-top a {
+  background-color: var(--main-color);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-to-top a i {
+  font-size: 1.75rem;
+  color: white;
+}
+.scroll-to-top a:hover {
+  background-color: #298eff;
+}
+:target#home ~ .scroll-to-top a {
+  visibility: hidden;
+  display: none;
 }
 /* footer */
 footer {
