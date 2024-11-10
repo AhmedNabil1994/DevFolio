@@ -477,54 +477,48 @@ section#testimonial .carousel-inner article .content h2 {
 /* blog */
 section#blog {
   scroll-margin-top: 3.25rem;
-  .card {
-    .card-header {
-      padding: 0;
-      img {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
-    }
-    .card-body {
-      position: relative;
-      span {
-        padding: 0.5rem 1rem;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 0.6875rem;
-        position: absolute;
-        top: -10%;
-        left: 50%;
-        transform: translateX(-50%);
-        cursor: text;
-      }
-      h3 {
-        a {
-          color: var(--secondary-color);
-          font-size: 1.3125rem;
-          transition: all var(--secondary-transition-duration);
-          &:hover {
-            color: var(--main-color);
-          }
-        }
-      }
-      p {
-        color: var(--p-a-color);
-      }
-    }
-    .card-footer {
-      img {
-        width: 30px;
-      }
-      a {
-        color: var(--secondary-color);
-        transition: all var(--secondary-transition-duration);
-        &:hover {
-          color: var(--main-color);
-        }
-      }
-    }
-  }
+}
+section#blog .card .card-header {
+  padding: 0;
+}
+section#blog .card .card-header img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+section#blog .card .card-body {
+  position: relative;
+}
+section#blog .card .card-body span {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.6875rem;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: text;
+}
+section#blog .card .card-body h3 a {
+  color: var(--secondary-color);
+  font-size: 1.3125rem;
+  transition: all var(--secondary-transition-duration);
+}
+section#blog .card .card-body h3 a:hover {
+  color: var(--main-color);
+}
+section#blog .card .card-body p {
+  color: var(--p-a-color);
+}
+section#blog .card .card-footer img {
+  width: 30px;
+}
+section#blog .card .card-footer img a {
+  color: var(--secondary-color);
+  transition: all var(--secondary-transition-duration);
+}
+section#blog .card .card-footer img a:hover {
+  color: var(--main-color);
 }
 /* contact */
 section#contact {
