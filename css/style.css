@@ -298,6 +298,7 @@ section#services article:hover .icon i {
 }
 /* statistics */
 section#statistics {
+  scroll-margin-top: 3.25rem;
   padding: 10rem 0;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
@@ -318,6 +319,9 @@ section#statistics .container p:first-of-type {
 /*portfolio*/
 section#portfolio {
   scroll-margin-top: 3.25rem;
+}
+section#portfolio .tab-content img {
+  border-radius: 0.3125rem;
 }
 section#portfolio .cards ul.nav-pills button {
   font-weight: bold;
@@ -411,6 +415,7 @@ section#portfolio .slider .carousel button span {
 }
 /* faq */
 section#faq {
+  scroll-margin-top: 3.25rem;
   padding: 3.75rem 0;
 }
 section#faq header h2 {
@@ -452,6 +457,7 @@ section#faq .accordion .accordion-item .accordion-body p {
 }
 /* testimonial */
 section#testimonial {
+  scroll-margin-top: 3.25rem;
   padding: 8rem 0;
   color: white;
   background-image: linear-gradient(
