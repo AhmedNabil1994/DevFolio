@@ -335,7 +335,6 @@ section#portfolio .cards .tab-content article {
   transition: all var(--main-transition-duration);
 }
 section#portfolio .cards .tab-content article .image {
-  cursor: pointer;
   overflow: hidden;
 }
 section#portfolio .cards .tab-content article .image img {
