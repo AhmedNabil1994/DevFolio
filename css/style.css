@@ -779,10 +779,8 @@ footer a {
   .slider .modal-dialog {
     --bs-modal-width: 800px;
   }
-  .slider .modal-dialog.type-2 {
-    .modal-dialog {
-      --bs-modal-width: 720px;
-    }
+  .slider.type-2 .modal-dialog {
+    --bs-modal-width: 720px;
   }
 }
 
