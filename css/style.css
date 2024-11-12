@@ -220,8 +220,8 @@ nav ul.navbar-nav li.dropdown ul.dropdown-menu li a.dropdown-item.active {
 header#home {
   height: 100vh;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/webp_images/hero-bg.webp") center / cover scroll,
-    url("../images/jpg_images/hero-bg.jpg") center / cover scroll;
+    url("../images/webp_images/backgrounds/hero-bg.webp") center / cover scroll,
+    url("../images/jpg_images/backgrounds/hero-bg.jpg") center / cover scroll;
 }
 header#home .text {
   color: white;
@@ -302,8 +302,8 @@ section#statistics {
   padding: 10rem 0;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/webp_images/counters-bg.webp") center / cover scroll,
-    url("../images/jpg_images/counters-bg.jpg") center / cover scroll;
+    url("../images/webp_images/backgrounds/counters-bg.webp") center / cover scroll,
+    url("../images/jpg_images/backgrounds/counters-bg.jpg") center / cover scroll;
 }
 section#statistics .container .icon {
   width: 60px;
@@ -464,8 +464,8 @@ section#testimonial {
       var(--main-color-rgba),
       var(--main-color-rgba)
     ),
-    url("../images/webp_images/overlay-bg.webp"),
-    url("../images/jpg_images/overlay-bg.jpg");
+    url("../images/webp_images/backgrounds/overlay-bg.webp"),
+    url("../images/jpg_images/backgrounds/overlay-bg.jpg");
   background-size: cover;
   background-attachment: scroll;
 }
@@ -538,8 +538,8 @@ section#contact {
       var(--main-color-rgba),
       var(--main-color-rgba)
     ),
-    url("../images/webp_images/overlay-bg.webp"),
-    url("../images/jpg_images/overlay-bg.jpg");
+    url("../images/webp_images/backgrounds/overlay-bg.webp"),
+    url("../images/jpg_images/backgrounds/overlay-bg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
