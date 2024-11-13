@@ -153,7 +153,7 @@ nav ul.navbar-nav li a.nav-link span:hover::before {
 nav ul.navbar-nav li a.nav-link.active {
   color: white;
 }
-nav ul.navbar-nav li a.nav-link.active::before {
+nav ul.navbar-nav li a.nav-link.active span::before {
   transform: scaleX(1);
 }
 nav ul.navbar-nav li a.nav-link.show {
