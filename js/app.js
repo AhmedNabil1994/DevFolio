@@ -27,7 +27,9 @@ const appTabImages = document.querySelectorAll("#pills-app img");
 const productTabImages = document.querySelectorAll("#pills-product img");
 const brandingTabImages = document.querySelectorAll("#pills-branding img");
 const booksTabImages = document.querySelectorAll("#pills-books img");
-
+// stats
+const statsAnchor = document.querySelector('a[href="#statistics"]');
+const statNumbers = document.querySelectorAll(".stat-number");
 
 // ------------------------------------home typing animation----------------------------
 (function typingAnimation() {
@@ -144,3 +146,29 @@ const tooltipTriggerList = document.querySelectorAll(
 const tooltipList = [...tooltipTriggerList].map(
   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 );
+
+// ------------------------------------Stats Counter Animation----------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  let statsAnimated = true;
+  function animateNumbers() {
+    statNumbers.forEach((num) => {
+      const target = +num.getAttribute("data-target");
+      const inc = target / 100;
+      (function updateNumber() {
+        const current = +num.innerText;
+        if (current < target) {
+          num.innerText = Math.ceil(current + inc);
+          setTimeout(updateNumber, 15);
+        } else {
+          num.innerText = target;
+        }
+      })();
+    });
+  }
+  document.addEventListener("scroll", function () {
+    if (statsAnchor.classList.contains("active") && statsAnimated) {
+      animateNumbers();
+      statsAnimated = false;
+    }
+  });
+});
