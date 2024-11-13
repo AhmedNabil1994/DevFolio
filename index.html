@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- page css file -->
     <!-- typed js library cdn -->
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -45,19 +45,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
             <li class="nav-item link">
-              <a class="nav-link" href="#home">home</a>
+              <a class="nav-link" href="#home"><span>home</span></a>
             </li>
             <li class="nav-item link">
-              <a class="nav-link" href="#about">about</a>
+              <a class="nav-link" href="#about"><span>about</span></a>
             </li>
             <li class="nav-item link">
-              <a class="nav-link" href="#services">services </a>
+              <a class="nav-link" href="#services"><span>services</span> </a>
             </li>
             <li class="nav-item link">
-              <a class="nav-link" href="#portfolio">work</a>
+              <a class="nav-link" href="#portfolio"><span>work</span></a>
             </li>
             <li class="nav-item link">
-              <a class="nav-link" href="#blog">blog</a>
+              <a class="nav-link" href="#blog"><span>blog</span></a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -67,8 +67,8 @@
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
                 aria-expanded="false"
-              >
-                Drop down
+                ><span>Drop down</span>
+
                 <i
                   class="bi bi-chevron-right d-block d-lg-none dropdown-arrow"
                 ></i>
@@ -121,7 +121,7 @@
             </li>
 
             <li class="nav-item link">
-              <a class="nav-link" href="#contact">contact</a>
+              <a class="nav-link" href="#contact"><span>contact</span></a>
             </li>
           </ul>
         </div>
@@ -145,7 +145,7 @@
     <!-- --------------------- -->
     <main>
       <!-- start about -->
-      <section id="about" class="bg-light mt-5 pt-5">
+      <section id="about" class="bg-light">
         <div class="container">
           <div class="content p-2 p-sm-3 p-lg-4">
             <div class="row">
@@ -156,7 +156,9 @@
                       <div>
                         <picture>
                           <source
-                            srcset="./images/webp_images/testimonial/testimonial-2.webp"
+                            srcset="
+                              ./images/webp_images/testimonial/testimonial-2.webp
+                            "
                             type="image/webp"
                           />
                           <img
@@ -170,14 +172,24 @@
                     </div>
                     <div class="col-sm-6 col-md-6">
                       <article class="info mt-3 mt-lg-2">
-                        <h2 class="mb-3"><span>Name</span>: Morgan Freeman</h2>
-                        <h2 class="mb-3">
-                          <span>Profile</span>: full stack developer
-                        </h2>
-                        <h2 class="mb-3">
-                          <span>Email</span>: contact@example.com
-                        </h2>
-                        <h2 class="mb-3"><span>Phone</span>: (617) 557-0089</h2>
+                        <ul class="list-unstyled">
+                          <li class="mb-3"><span>Name</span>: Morgan Freeman</li>
+                          <li class="mb-3"><span>Profile</span>: full stack developer</li>
+                          <li class="mb-3">
+                            <span>Email</span>:
+                            <a
+                              href="mailto:contact@example.com"
+                              aria-label="email"
+                              >contact@example.com</a
+                            >
+                          </li>
+                          <li>
+                            <span>Phone</span>:
+                            <a href="tel:(617) 557-0089" aria-label="phone"
+                              >(617) 557-0089</a
+                            >
+                          </li>
+                        </ul>
                       </article>
                     </div>
                     <div class="col mt-5 mt-xl-4">
@@ -360,7 +372,7 @@
           <div class="row gy-5 gy-md-0">
             <div class="col-sm-6 col-md-3">
               <div class="text-center">
-                <div class="icon mb-1 mx-auto">
+                <div class="icon mb-4 mx-auto">
                   <i class="bi bi-check"></i>
                 </div>
                 <p class="mb-0">450</p>
@@ -369,7 +381,7 @@
             </div>
             <div class="col-sm-6 col-md-3">
               <div class="text-center">
-                <div class="icon mb-1 mx-auto">
+                <div class="icon mb-4 mx-auto">
                   <i class="bi bi-journal-richtext"></i>
                 </div>
                 <p class="mb-0">25</p>
@@ -378,7 +390,7 @@
             </div>
             <div class="col-sm-6 col-md-3">
               <div class="text-center">
-                <div class="icon mb-1 mx-auto">
+                <div class="icon mb-4 mx-auto">
                   <i class="bi bi-people"></i>
                 </div>
                 <p class="mb-0">550</p>
@@ -387,7 +399,7 @@
             </div>
             <div class="col-sm-6 col-md-3">
               <div class="text-center">
-                <div class="icon mb-1 mx-auto">
+                <div class="icon mb-4 mx-auto">
                   <i class="bi bi-award"></i>
                 </div>
                 <p class="mb-0">48</p>
@@ -2167,7 +2179,9 @@
                     <article class="text-center">
                       <picture>
                         <source
-                          srcset="./images/webp_images/testimonial/testimonial-2.webp"
+                          srcset="
+                            ./images/webp_images/testimonial/testimonial-2.webp
+                          "
                           type="image/webp"
                         />
                         <img
@@ -2191,7 +2205,9 @@
                     <article class="text-center">
                       <picture>
                         <source
-                          srcset="./images/webp_images/testimonial/testimonial-4.webp"
+                          srcset="
+                            ./images/webp_images/testimonial/testimonial-4.webp
+                          "
                           type="image/webp"
                         />
                         <img
@@ -2270,12 +2286,12 @@
                   <div class="info">
                     <picture>
                       <source
-                        srcset="./images/webp_images/testimonial-2.webp"
+                        srcset="./images/webp_images/testimonial/testimonial-2.webp"
                         type="image/webp"
                       />
                       <img
                         class="rounded-circle img-fluid"
-                        src="./images/jpg_images/testimonial-2.jpg"
+                        src="./images/jpg_images/testimonial/testimonial-2.jpgtestimonial-2.jpg"
                         alt="Image 1"
                         loading="lazy"
                       />
@@ -2331,12 +2347,12 @@
                   <div class="info">
                     <picture>
                       <source
-                        srcset="./images/webp_images/testimonial-2.webp"
+                        srcset="./images/webp_images/testimonial/testimonial-2.webp"
                         type="image/webp"
                       />
                       <img
                         class="rounded-circle img-fluid"
-                        src="./images/jpg_images/testimonial-2.jpg"
+                        src="./images/jpg_images/testimonial/testimonial-2.jpg"
                         alt="Image 1"
                         loading="lazy"
                       />
@@ -2392,12 +2408,12 @@
                   <div class="info">
                     <picture>
                       <source
-                        srcset="./images/webp_images/testimonial-2.webp"
+                        srcset="./images/webp_images/testimonial/testimonial-2.webp"
                         type="image/webp"
                       />
                       <img
                         class="rounded-circle img-fluid"
-                        src="./images/jpg_images/testimonial-2.jpg"
+                        src="./images/jpg_images/testimonial/testimonial-2.jpg"
                         alt="Image 1"
                         loading="lazy"
                       />

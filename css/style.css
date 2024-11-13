@@ -131,12 +131,14 @@ nav ul.navbar-nav li {
 }
 nav ul.navbar-nav li a.nav-link {
   color: white;
+}
+nav ul.navbar-nav li a.nav-link span {
   position: relative;
 }
-nav ul.navbar-nav li a.nav-link::before {
+nav ul.navbar-nav li a.nav-link span::before {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: -20%;
   left: 0;
   right: 0;
   height: 2px;
@@ -145,7 +147,7 @@ nav ul.navbar-nav li a.nav-link::before {
   transform-origin: left;
   transition: transform var(--main-transition-duration);
 }
-nav ul.navbar-nav li a.nav-link:hover::before {
+nav ul.navbar-nav li a.nav-link span:hover::before {
   transform: scaleX(1);
 }
 nav ul.navbar-nav li a.nav-link.active {
@@ -236,16 +238,20 @@ header#home p {
   font-size: 2.5rem;
 }
 /* about */
+section#about {
+  padding-top: 4rem;
+}
 section#about .content {
   background-color: white;
   box-shadow: 1px 0px 2px 2px #80808033;
 }
-section#about .content .left .info h2 {
+section#about .content .left .info ul li,
+section#about .content .left .info ul li a {
   font-size: 1rem;
   font-weight: 400;
   color: var(--p-span-color);
 }
-section#about .content .left h2 span,
+section#about .content .left ul li span,
 section#about .content .left h2 {
   font-weight: 600;
   font-size: 1.125rem;
@@ -299,11 +305,13 @@ section#services article:hover .icon i {
 /* statistics */
 section#statistics {
   scroll-margin-top: 3.25rem;
-  padding: 10rem 0;
+  padding: 8rem 0;
   color: white;
   background: linear-gradient(var(--main-color-rgba), var(--main-color-rgba)),
-    url("../images/webp_images/backgrounds/counters-bg.webp") center / cover scroll,
-    url("../images/jpg_images/backgrounds/counters-bg.jpg") center / cover scroll;
+    url("../images/webp_images/backgrounds/counters-bg.webp") center / cover
+      scroll,
+    url("../images/jpg_images/backgrounds/counters-bg.jpg") center / cover
+      scroll;
 }
 section#statistics .container .icon {
   width: 60px;
@@ -524,11 +532,11 @@ section#blog .card .card-body p {
 section#blog .card .card-footer img {
   width: 30px;
 }
-section#blog .card .card-footer img a {
+section#blog .card .card-footer .info a {
   color: var(--secondary-color);
   transition: all var(--secondary-transition-duration);
 }
-section#blog .card .card-footer img a:hover {
+section#blog .card .card-footer .info a:hover {
   color: var(--main-color);
 }
 /* contact */
@@ -543,6 +551,7 @@ section#contact {
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
+  box-shadow: 0 13px 7px 15px #8080803d;
 }
 
 section#contact .content header h2 {
