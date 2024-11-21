@@ -398,9 +398,6 @@ section#portfolio .slider span.close-icon {
 section#portfolio .slider span.close-icon:focus-visible {
   outline: none;
 }
-section#portfolio .slider .carousel .carousel-inner {
-  overflow: visible;
-}
 section#portfolio .slider .carousel .carousel-inner img {
   cursor: zoom-in;
 }
